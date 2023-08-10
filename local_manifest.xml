@@ -23,7 +23,7 @@
   <project path="vendor/xiaomi/merlinx" name="proprietary_vendor_xiaomi_merlinx" remote="dev" revision="lineage-20"/>
 
  <!--Hardware -->
-  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="los" revision="lineage-20"/>
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="dev" revision="lineage-20"/>
 
  <!-- Mtk sepolicy -->
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="dev" revision="lineage-20"/>
