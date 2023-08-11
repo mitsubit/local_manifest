@@ -3,7 +3,7 @@
 
   <remote name="dev" fetch="https://github.com/mt6768-dev" />
   <remote name="mitsu" fetch="https://github.com/mitsu00" />
-  <remote name="clang-gengkapak" fetch="git://git.code.sf.net/p/gengkapak" />
+  <remote name="clang" fetch="https://gitlab.com/XSans0" />
 
 
  <!-- Common Device Tree -->
@@ -29,6 +29,6 @@
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="dev" revision="lineage-20"/>
 
  <!-- Extra -->
-  <project path="prebuilts/clang/host/linux-x86/clang-gengkapak" name="clang-gengkapak" remote="clang-gengkapak" revision="main" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-gengkapak" name="weebx-clang-test" remote="clang" revision="main" clone-depth="1" />
   
 </manifest>
