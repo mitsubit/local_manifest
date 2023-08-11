@@ -3,11 +3,11 @@
 
   <remote name="dev" fetch="https://github.com/mt6768-dev" />
   <remote name="mitsu" fetch="https://github.com/mitsu00" />
-  <remote name="ImSurajxD" fetch="https://gitlab.com/ImSurajxD" />
+  <remote name="clang-gengkapak" fetch="git://git.code.sf.net/p/gengkapak" />
 
 
  <!-- Common Device Tree -->
-  <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="mitsu" revision="lineage-20"/>
+  <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="mitsu" revision="stagging"/>
      
  <!-- Device Tree -->
   <project path="device/xiaomi/merlinx" name="android_device_xiaomi_merlinx" remote="mitsu" revision="alpha-13"/>
@@ -29,6 +29,6 @@
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="dev" revision="lineage-20"/>
 
  <!-- Extra -->
-  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-gengkapak" name="clang-gengkapak" remote="clang-gengkapak" revision="main" clone-depth="1" />
   
 </manifest>
