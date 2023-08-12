@@ -3,7 +3,7 @@
 
   <remote name="dev" fetch="https://github.com/6768Team" />
   <remote name="mitsubit" fetch="https://github.com/mitsubit" />
-  <remote name="ImSurajxD" fetch="https://gitlab.com/ImSurajxD" />
+  <remote name="arrowss" fetch="https://github.com/ArrowOS" />
 
 
  <!-- Common Device Tree -->
@@ -23,10 +23,12 @@
   <project path="vendor/xiaomi/merlinx" name="android_vendor_xiaomi_merlinx" remote="dev" revision="lineage-20"/>
 
  <!--Hardware -->
-  <!-- <project path="hardware/mediatek" name="android_hardware_mediatek" remote="dev" revision="lineage-20"/> -->
+  <remove-project path="hardware/mediatek" />
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="arrowss" revision="arrow-13.1"/>
 
  <!-- Mtk sepolicy -->
-  <!-- <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="dev" revision="lineage-20"/> -->
+  <remove-project path="device/mediatek/sepolicy_vndr" />
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="arrowss" revision="arrow-13.1"/>
 
  <!-- Extra -->
   <!-- <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master" clone-depth="1" /> -->
