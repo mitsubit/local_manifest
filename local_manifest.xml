@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="dev" fetch="https://github.com/mt6768-dev" />
-  <remote name="mitsu" fetch="https://github.com/mitsu00" />
+  <remote name="dev" fetch="https://github.com/6768Team" />
+  <remote name="mitsubit" fetch="https://github.com/mitsubit" />
   <remote name="ImSurajxD" fetch="https://gitlab.com/ImSurajxD" />
 
 
  <!-- Common Device Tree -->
-  <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="mitsu" revision="lineage-20"/>
+  <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="dev" revision="lineage-20"/>
      
  <!-- Device Tree -->
-  <project path="device/xiaomi/merlinx" name="android_device_xiaomi_merlinx" remote="mitsu" revision="alpha-13"/>
+  <project path="device/xiaomi/merlinx" name="android_device_xiaomi_merlinx" remote="mitsu" revision="alpha-13s"/>
 
  <!-- Kernel Trees-->
-  <project path="kernel/xiaomi/mt6768" name="kernel_xiaomi_mt6768" remote="mitsu" revision="main" sync-s="true"/>
+  <!-- <project path="kernel/xiaomi/mt6768" name="kernel_xiaomi_mt6768" remote="mitsu" revision="main" sync-s="true"/> -->
 
 
  <!-- vendor Common Trees--> 
-  <project path="vendor/xiaomi/mt6768-common" name="proprietary_vendor_xiaomi_mt6768-common" remote="dev" revision="lineage-20"/>
+  <!-- <project path="vendor/xiaomi/mt6768-common" name="proprietary_vendor_xiaomi_mt6768-common" remote="dev" revision="lineage-20"/> -->
 
  <!--vendor tree-->
-  <project path="vendor/xiaomi/merlinx" name="proprietary_vendor_xiaomi_merlinx" remote="dev" revision="lineage-20"/>
+  <project path="vendor/xiaomi/merlinx" name="android_vendor_xiaomi_merlinx" remote="dev" revision="lineage-20"/>
 
  <!--Hardware -->
-  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="dev" revision="lineage-20"/>
+  <!-- <project path="hardware/mediatek" name="android_hardware_mediatek" remote="dev" revision="lineage-20"/> -->
 
  <!-- Mtk sepolicy -->
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="dev" revision="lineage-20"/>
 
  <!-- Extra -->
-  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master" clone-depth="1" />
+  <!-- <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master" clone-depth="1" /> -->
   
 </manifest>
